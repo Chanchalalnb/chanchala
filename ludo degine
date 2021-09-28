@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ludo Game Design Using HTML & CSS Only</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+
+<body>
+	 <div class="container card">
+	 	<!-- First Row -->
+	 	 <div class="container-row1 clearfix">
+            <div class="row1-col1 green">
+                <div class="row1-col1-child clearfix white">
+                    <div class="green"></div>
+                    <div class="green"></div>
+                    <div class="green"></div>
+                    <div class="green"></div>
+                </div>
+            </div>
+            <div class="row1-col2 clearfix">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div></div>
+                <div class="yellow"></div>
+                <div></div>
+                <div></div>
+                <div class="yellow"></div>
+                <div></div>
+                <div></div>
+                <div class="yellow"></div>
+                <div></div>
+                <div></div>
+                <div class="yellow"></div>
+                <div></div>
+            </div>
+            <div class="row1-col3 yellow">
+                <div class="row1-col3-child clearfix white">
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                    <div class="yellow"></div>
+                </div>
+            </div>
+        </div>
+
+	 <!-- Second row -->
+        <div class="container-row2 clearfix">
+            <div class="row2-col1 clearfix">
+                <div></div>
+                <div class="green"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="green"></div>
+                <div class="green"></div>
+                <div class="green"></div>
+                <div class="green"></div>
+                <div class="green"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row2-col2">
+                <!-- add triangular effect using html and css -->
+                <div class="contain-triangles">
+                    <div class="triangle-right"></div>
+                    <div class="triangle-up"></div>
+                    <div class="triangle-left"></div>
+                    <div class="triangle-down"></div>
+                </div>
+            </div>
+            <div class="row2-col3 clearfix">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="blue"></div>
+                <div class="blue"></div>
+                <div class="blue"></div>
+                <div class="blue"></div>
+                <div class="blue"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="blue"></div>
+                <div></div>
+            </div>
+        </div>
+
+  <!-- Third row -->
+        <div class="container-row3 clearfix">
+            <div class="row3-col1 red">
+                <div class="row3-col1-child clearfix white">
+                    <div class="red"></div>
+                    <div class="red"></div>
+                    <div class="red"></div>
+                    <div class="red"></div>
+                </div>
+            </div>
+            <div class="row3-col2 clearfix">
+                <div></div>
+                <div class="red"></div>
+                <div></div>
+                <div></div>
+                <div class="red"></div>
+                <div></div>
+                <div></div>
+                <div class="red"></div>
+                <div></div>
+                <div></div>
+                <div class="red"></div>
+                <div></div>
+                <div class="red"></div>
+                <div class="red"></div>
+                <div ></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row3-col3 blue">
+                <div class="row3-col3-child clearfix white">
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+	 </div>
+
+
+</body>
+</html>
+
+
+
+style.css
+/* CSS Reset */
+*{
+    margin: 100;
+    padding: 100;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 80px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 25px;
+    margin: 2px 4px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(92, 172, 72);
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 100px;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:rgb(182, 43, 43);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #c91d56;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 300%;
+    padding: 0.8rem;
+    border-radius: 9px;
+    font-size: 2.8rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: rgb(207, 37, 37);
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: rgb(231, 130, 130);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
