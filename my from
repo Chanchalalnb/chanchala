@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Myform</title>
+</head>
+<body bgcolor="pink">
+
+<form>
+    first name: <input type="text" value=""><br><br>
+
+    last name:<input type="text" value=""><br><br>
+
+    password:<input type="password" value=""><br><br>
+
+    mail id <input type="text" value=""><br><br>
+
+    mobile no <input type="text" value=""><br><br>
+
+    gender :<input type="radio" name="gender"value="male">male
+            <input type="radio" name="gender"value="female">female<br>
+    checkbox :<input type="checkbox" value="a">a 
+    <input type="checkbox" value="b">b
+    <input type="checkbox" value="c">c<br></br>
+    
+    
+    city:
+    <select>
+        <option>sitamarhi</option>
+        <option>jaipur</option>
+        <option>mumbai</option>
+        <option>muzaffarpur</option>
+    </select><br><br><br>
+    feedback:
+            <text area =rows="5"  cols="10" ></text area><br><br> 
+    certifiction:
+             <input type="file"><br><br>  
+
+             <input type="submit" name="sub"value="click me">
+                
+             </form>
+</body>
+</html>
